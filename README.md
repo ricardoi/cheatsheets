@@ -1,2 +1,2 @@
 # cheatsheets
-temp webpages of personal cheatsheet
+temp webpages of personal cheatsheets
