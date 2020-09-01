@@ -19,6 +19,8 @@
 <pre><code>grep -c ‘^&gt;’ filename #faster version
 </code></pre>
 <h3 id="to-get-length-and-coverage-from-fasta">to get length and coverage from fasta</h3>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">awk</span> <span class="token string">'/^&gt;/{sub(/^&gt;/,"");val=<span class="token variable">$0</span>;next}  {print val,length(<span class="token variable">$0</span>)}'</span> file.fas <span class="token operator">&gt;</span> lenghts.txt
+</code></pre>
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token function">grep</span> <span class="token string">'^&gt;'</span>  contigs.fasta <span class="token operator">|</span> <span class="token function">awk</span> -F _  <span class="token string">'BEGIN {OFS="\t"} {print <span class="token variable">$0</span>,<span class="token variable">$4</span>,<span class="token variable">$6</span>}'</span> <span class="token operator">|</span> <span class="token function">more</span>
 </code></pre>
 <h3 id="split-multifasta-to-fasta-1">split multifasta to fasta</h3>
