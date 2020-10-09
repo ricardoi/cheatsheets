@@ -4,6 +4,9 @@
 ---
 
 <h2 id="bash-commands-to-manipulate-fasta-files">bash commands to manipulate fasta files</h2>
+<h3 id="find-files-by-size"><code>find</code> files by size</h3>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">find</span> -maxdepth 1 -size 0 -print
+</code></pre>
 <h3 id="awk-for-subsetting-fasta-files-using-an-ids.txt-list-without-"><code>awk</code> for subsetting fasta files using an ids.txt list without “&gt;”</h3>
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token function">awk</span> <span class="token string">'NR==FNR{n["&gt;"<span class="token variable">$0</span>];next} f{print f ORS <span class="token variable">$0</span>;f=""} <span class="token variable">$0</span> in n{f=<span class="token variable">$0</span>}'</span> ids.txt contig_sequences.fa <span class="token operator">&gt;</span> output.fa
 </code></pre>
