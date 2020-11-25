@@ -10,7 +10,10 @@
 
 <body class="stackedit">
   <div class="stackedit__html"><hr>
-<hr>
+<hr>---
+
+
+---
 <h2 id="r-commands">R Commands:</h2>
 <h4 id="
 load-multiple-cvs-at-once">Load multiple CVS at once</h4>
@@ -27,8 +30,8 @@ files = list.files(pattern="*.csv")
 ```
 ls = list(NULL)
 for (i in 1:length(files)){
-  x &lt;- read.csv(files[i], as.is=T)
-  x$IDs &lt;-  rep(names$names[i], nrow(x))
+  x - read.csv(files[i], as.is=T)
+  x$IDs -  rep(names$names[i], nrow(x))
   ls[[i]] = x
 }
 ls[[1]]
@@ -37,7 +40,7 @@ ls[[1]]
 rbind the # samples to creat the Master_table</strong></p>
 <pre><code>**
 ```
-new_file &lt;- rbind.fill(ls)
+new_file - rbind.fill(ls)
 </code></pre>
 <p>```
 #------------------------------------------------------------------------------------<br>
@@ -49,10 +52,13 @@ lapply(list, function(x) write.table( data.frame(x), 'list_out.csv'  , append= T
 </code></pre>
 <p><a href="`
 http://adv-r.had.co.nz/Style.html">Style guide R</a><br>
-<a href="http://adv-r.had.co.nz/Functions.html">Advance Functions</a><br>
-<a href="http://adv-r.had.co.nz/Environments.html">Environments</a></p>
+<a href="http://adv-r.had.co.nz/Functions.htmle ui</a><br>
+<a href="http://adv-r.had.co.nz/Environments.htmlvnent/a></p>
 )
 </div>
 </body>
 
 </html>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE4NDgzOTY4OV19
+-->
