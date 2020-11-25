@@ -37,22 +37,9 @@ lapply(list, function(x) write.table( data.frame(x),
 	'list_out.csv' , append= T, sep=',' ))`
 ```
 
-  
-
-
 [Style guide R](http://adv-r.had.co.nz/Style.html)
-
 [Advance Functions](http://adv-r.had.co.nz/Functions.html)
-
-[Advance Functions](http://adv-r.had.co.nz/Functions.html)
-
 [Environments](http://adv-r.had.co.nz/Environments.html)
-
-[Environments](http://adv-r.had.co.nz/Environments.html)
-
 <!--stackedit_data:
-
-<!--stackedit_data:
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NTY0MTcyNCwtMTg0ODM5Njg5XX0=
+eyJoaXN0b3J5IjpbLTgwOTU0Mzc2OCwtMTg0ODM5Njg5XX0=
 -->
