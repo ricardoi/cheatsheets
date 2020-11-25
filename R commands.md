@@ -3,7 +3,7 @@
 <pre><code>files = list.files(pattern="*.csv")
 </code></pre>
 <p><strong>Splitng the csv file</strong></p>
-<pre><code>names &lt;- as.data.frame(files) %&gt;%
+<pre><code>names lt;<- as.data.frame(files) %&gt;%
 	separate(files, into=c("names", "ext"), sep= "[.]")
 </code></pre>
 <p><strong>loading the csv into a list</strong></p>
@@ -23,7 +23,11 @@ ls[[1]]
 <pre><code>lapply(list, function(x) write.table( data.frame(x),
 	'list_out.csv' , append= T, sep=',' ))`
 </code></pre>
-<p><a href="http://adv-r.had.co.nz/Style.html">Style guide R</a><br>
-<a href="http://adv-r.had.co.nz/Functions.html">Advance Functions</a><br>
-<a href="http://adv-r.had.co.nz/Environments.html">Environments</a></p>
-
+<p><a href="`http://adv-r.had.co.nz/Style.html">Style guide R</a><br>
+<a href="s](http://adv-r.had.co.nz/Functions.html">Advance Functions</a><br>
+<a href=")
+[Environmenthttp://adv-r.had.co.nz/Environments.html">Environments</a></p>
+)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTgzNTEwNTMxMF19
+-->
