@@ -12,9 +12,8 @@
 <li>Run a new terminal session</li>
 </ol>
 <h3 id="loops">loops</h3>
-<pre><code>while IFS= read -r line
-do
-Rscript --vanilla ~/folder/file.R $line
+<pre><code>while IFS= read -r line; do
+  Rscript --vanilla ~/folder/file.R $line
 done &lt; file_with_lines.txt
 </code></pre>
 <h3 id="links-to-bash">Links to bash</h3>
