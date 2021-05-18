@@ -12,7 +12,6 @@
 </code></pre>
 <h3 id="split-multifasta-to-fasta">Split multifasta to fasta</h3>
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token function">grep</span> -o <span class="token string">'.*virus'</span> in_file.fasta <span class="token operator">&gt;</span> out_file.fasta
-
 </code></pre>
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token function">awk</span> <span class="token string">'/^&gt;/ {s=substr(<span class="token variable">$0</span>,2) ".fasta";print " "&gt;s}; s{print &gt;s}'</span> multi.fasta
 </code></pre>
@@ -20,6 +19,9 @@
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token function">grep</span> -c <span class="token string">"&gt;"</span> <span class="token variable">$1</span> file_name
 </code></pre>
 <pre><code>grep -c ‘^&gt;’ filename #faster version
+</code></pre>
+<h3 id="removing-empty-lines">removing empty lines</h3>
+<pre class=" language-bash"><code class ="prism language-bash"><span class="token function">sed</span> -i <span class"token string">'/^$/d'</span>file.txt
 </code></pre>
 <h3 id="to-get-length-and-coverage-from-fasta">to get length and coverage from fasta</h3>
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token function">awk</span> <span class="token string">'/^&gt;/{sub(/^&gt;/,"");val=<span class="token variable">$0</span>;next}  {print val,length(<span class="token variable">$0</span>)}'</span> file.fas <span class="token operator">&gt;</span> lenghts.txt
