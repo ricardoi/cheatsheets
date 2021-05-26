@@ -27,13 +27,8 @@ mv /path/to/target.img.dmg /path/to/target.img
 ```bash
 sudo dd if=/path/to/downloaded.img of=/dev/rdiskN bs=1m
 ``` 
-<<<<<<< HEAD
 - Replace `/path/to/downloaded.img` with the path where the image file is located; for example, `./ubuntu.img` or `./ubuntu.dmg`). 
 > Note: This might take a while... 
-=======
-> Replace `/path/to/downloaded.img` with the path where the image file is located; for example, `./ubuntu.img` or `./ubuntu.dmg`). 
-
->>>>>>> befdf16562359699ee08c1cff3b4a5aab4f3e92f
 > Note: Using /dev/rdisk instead of /dev/disk may be faster. \
 > Note: If you see the error dd: Invalid number '1m', you are using GNU dd. Use the same command but replace bs=1m with bs=1M. \
 > Note: If you see the error dd: /dev/diskN: Resource busy, make sure the disk is not in use. 
