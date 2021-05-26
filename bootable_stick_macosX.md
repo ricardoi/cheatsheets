@@ -16,22 +16,22 @@ hdiutil convert -format UDRW -o /path/to/target.img /path/to/source.iso
 ```bash
 mv /path/to/target.img.dmg /path/to/target.img
 ```
-- Run diskutil list to get the current list of devices \
-- Insert your flash media \
-- Run diskutil list again and determine the device node assigned to your flash media (e.g. /dev/disk2) \
-- Run diskutil unmountDisk `/dev/diskN` (replace N with the disk number from the last command - in the previous example, N would be 2) \
+- Run diskutil list to get the current list of devices 
+- Insert your flash media 
+- Run diskutil list again and determine the device node assigned to your flash media (e.g. /dev/disk2) 
+- Run diskutil unmountDisk `/dev/diskN` (replace N with the disk number from the last command - in the previous example, N would be 2) 
 
 #### Execute 
 
 ```bash
 sudo dd if=/path/to/downloaded.img of=/dev/rdiskN bs=1m
 ``` 
-- Replace `/path/to/downloaded.img` with the path where the image file is located; for example, `./ubuntu.img` or `./ubuntu.dmg`). \
+- Replace `/path/to/downloaded.img` with the path where the image file is located; for example, `./ubuntu.img` or `./ubuntu.dmg`). 
 > Note: Using /dev/rdisk instead of /dev/disk may be faster. \
 > Note: If you see the error dd: Invalid number '1m', you are using GNU dd. Use the same command but replace bs=1m with bs=1M. \
-> Note: If you see the error dd: /dev/diskN: Resource busy, make sure the disk is not in use. Start the 'Disk Utility.app' and unmount (don't eject) the drive. \
+> Note: If you see the error dd: /dev/diskN: Resource busy, make sure the disk is not in use. Start the 'Disk Utility.app' and unmount (don't eject) the drive. 
 
-- Run diskutil eject /dev/diskN and remove your flash media when the command completes \
+- Run diskutil eject /dev/diskN and remove your flash media when the command completes 
 - Now the USB stick is ready. Boot the device that you want from the USB stick.
 
 credit to (Lewan Technology)[https://www.lewan.com/blog/2012/02/10/making-a-bootable-usb-stick-on-an-apple-mac-os-x-from-an-iso]
