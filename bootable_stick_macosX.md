@@ -31,7 +31,7 @@ sudo dd if=/path/to/downloaded.img of=/dev/rdiskN bs=1m
 > Note: This might take a while... 
 > Note: Using /dev/rdisk instead of /dev/disk may be faster. \
 > Note: If you see the error dd: Invalid number '1m', you are using GNU dd. Use the same command but replace bs=1m with bs=1M. \
-> Note: If you see the error dd: /dev/diskN: Resource busy, make sure the disk is not in use. 
+> Note: If you see the error dd: /dev/diskN: Resource busy, make sure the disk is not in use. \
 >       Start the 'Disk Utility.app' and unmount (don't eject) the drive. p.ex. `diskutil unmountDisk /dev/disk3`
 
 - Run diskutil eject `/dev/diskN` and remove your flash media when the command completes 
