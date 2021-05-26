@@ -16,9 +16,9 @@ hdiutil convert -format UDRW -o /path/to/target.img /path/to/source.iso
 ```bash
 mv /path/to/target.img.dmg /path/to/target.img
 ```
-- Run diskutil list to get the current list of devices 
+- Run `diskutil list` to get the current list of devices 
 - Insert your flash media 
-- Run diskutil list again and determine the device node assigned to your flash media (e.g. /dev/disk2) 
+- Run `diskutil list` again and determine the device node assigned to your flash media (e.g. `/dev/disk2`) 
 - Run diskutil unmountDisk `/dev/diskN` (replace N with the disk number from the last command - in the previous example, N would be 2) 
 
 #### Execute 
