@@ -27,11 +27,13 @@ mv /path/to/target.img.dmg /path/to/target.img
 sudo dd if=/path/to/downloaded.img of=/dev/rdiskN bs=1m
 ``` 
 - Replace `/path/to/downloaded.img` with the path where the image file is located; for example, `./ubuntu.img` or `./ubuntu.dmg`). 
+> Note: This might take a while... 
 > Note: Using /dev/rdisk instead of /dev/disk may be faster. \
 > Note: If you see the error dd: Invalid number '1m', you are using GNU dd. Use the same command but replace bs=1m with bs=1M. \
 > Note: If you see the error dd: /dev/diskN: Resource busy, make sure the disk is not in use. Start the 'Disk Utility.app' and unmount (don't eject) the drive. 
 
-- Run diskutil eject /dev/diskN and remove your flash media when the command completes 
-- Now the USB stick is ready. Boot the device that you want from the USB stick.
+- Run diskutil eject `/dev/diskN` and remove your flash media when the command completes 
+- Now the USB stick is ready. 
+- Boot the device that you want from the USB stick.
 
 credit to (Lewan Technology)[https://www.lewan.com/blog/2012/02/10/making-a-bootable-usb-stick-on-an-apple-mac-os-x-from-an-iso]
