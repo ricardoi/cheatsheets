@@ -1,6 +1,6 @@
 # Cheat sheet documentation
 
-## Ricardo I. Alcala
+### @author: Ricardo I. Alcala
 
 Personal notes, and code collected through the years finding solutions.
 
@@ -27,6 +27,10 @@ do
 done < file_with_lines.txt
 ```
 
-##### tricks in bash for fasta manipulation
+###### tricks in bash for fasta manipulation
 Fasta files some times are tricky to manipulate, and there are many softwares for fasta manipulations. I prefer using bash commamnds to find fast results, check this [repo](https://github.com/ricardoi/cheatsheets/blob/master/bash%20for%20fasta%20manipulation.md) with  commands to manipulate fasta files.
+
+##### Regular Expressions
+
+Cheatsheet for [RegEx](https://github.com/ricardoi/cheatsheets/blob/master/ReGex101.md
 
