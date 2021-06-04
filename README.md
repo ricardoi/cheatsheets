@@ -13,5 +13,5 @@ If you need an introduction to ```bash``` command lines go to this [document](ht
 > `ls -lt` - list the directories as a list by time \
 > `cp` - copy a file \
 > `mv` - move a file or rename a file \
-> Check the [document](https://github.com/ricardoi/cheatsheets/blob/master/commandsUNIX.pdf)
+> If you want more, check the [document](https://github.com/ricardoi/cheatsheets/blob/master/commandsUNIX.pdf)
 
