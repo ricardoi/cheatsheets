@@ -31,6 +31,6 @@ x  # swap_pattern_and_hold
 y  # transform_chars
 </code></pre>
 <p><a href="https://regex101.com/">https://regex101.com/</a></p>
-<p><a href="https://rdrr.io/cran/stringi/man/stringi-search-regex.html">Stringi** veru useful</a></p>
+<p><a href="https://stringi.gagolewski.com/">Stringi** veru useful</a></p>
 <p><a href="https://www.debuggex.com/r/E7N3Sscav7q9eFw1">https://www.debuggex.com/r/E7N3Sscav7q9eFw1</a></p>
 
