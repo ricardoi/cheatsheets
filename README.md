@@ -33,7 +33,7 @@ list=$(ls *.fasta | cut -d_ -f1)
 while IFS= read -r line
 do
   Rscript --vanilla ~/folder/file.R $line
-done < "list"
+done <<< "list"
 ```
 Then execute it with `sh useful_script.sh`, probably you nedd to `chmod +x useful_script.sh` first. 
 
