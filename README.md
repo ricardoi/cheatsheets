@@ -45,3 +45,5 @@ Fasta files some times are tricky to manipulate, and there are many softwares fo
 
 Cheatsheet for [RegEx](https://github.com/ricardoi/cheatsheets/blob/master/ReGex101.md
 
+https://observablehq.com/@ricardoi
+
