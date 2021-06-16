@@ -1,7 +1,5 @@
 This examples are from the Garrett lab
 
-<!DOCTYPE html>
-
 <html>
 
 <head>
