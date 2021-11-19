@@ -5,8 +5,8 @@
 Personal notes, and code collected through the years finding solutions.
 
 ### Personal pages:
-**Basic Usage and Tutoriasl **
-• [blast program](https://github.com/ricardoi/cheatsheets/blob/master/blast_commands.md)
+**Basic Usage and Tutoriasl **\
+• [Blast commands](https://github.com/ricardoi/cheatsheets/blob/master/blast_commands.md)\
 • [Git commands](https://github.com/ricardoi/cheatsheets/blob/master/git.md)\
 **Program language examples**\
 • [R examples](https://github.com/ricardoi/cheatsheets/blob/master/R%20commands.md)\
@@ -16,9 +16,7 @@ Personal notes, and code collected through the years finding solutions.
 • [Bash commands to manipulate fasta files](https://github.com/ricardoi/cheatsheets/blob/master/shell_tricks.md)\
 • [Bash commands and files manipulation](https://github.com/ricardoi/cheatsheets/blob/master/bash_local-tricks.md)\
 • [other bash tricks](https://github.com/ricardoi/cheatsheets/blob/master/shell_tricks.md)\
-• [Regulas Expressions](https://github.com/ricardoi/cheatsheets/blob/master/ReGex101.md)\
-
-
+• [Regular Expressions](https://github.com/ricardoi/cheatsheets/blob/master/ReGex101.md)\
 
 ##### bash
 If you need an introduction to ```bash``` command lines go to this [document](https://github.com/ricardoi/cheatsheets/blob/master/commandsUNIX.pdf)
