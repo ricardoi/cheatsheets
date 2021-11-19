@@ -5,9 +5,10 @@
 Personal notes, and code collected through the years finding solutions.
 
 ### Personal pages:
-**Git commands\
+**Basic Usage and Tutoriasl **
+• [blast program]
 • [Git commands](https://github.com/ricardoi/cheatsheets/blob/master/git.md)\
-**Other programs examples**\
+**Program language examples**\
 • [R examples](https://github.com/ricardoi/cheatsheets/blob/master/R%20commands.md)\
 • [Julia examples](https://github.com/ricardoi/cheatsheets/blob/master/running_julia.md)\
 • [SLURM script](https://github.com/ricardoi/cheatsheets/blob/master/JOB.sbatch)\
