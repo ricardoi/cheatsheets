@@ -6,7 +6,7 @@ Personal notes, and code collected through the years finding solutions.
 
 ### Personal pages:
 **Basic Usage and Tutoriasl **
-• [blast program]
+• [blast program](https://github.com/ricardoi/cheatsheets/blob/master/blast_commands.md)
 • [Git commands](https://github.com/ricardoi/cheatsheets/blob/master/git.md)\
 **Program language examples**\
 • [R examples](https://github.com/ricardoi/cheatsheets/blob/master/R%20commands.md)\
