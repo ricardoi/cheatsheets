@@ -4,6 +4,20 @@
 
 Personal notes, and code collected through the years finding solutions.
 
+### Personal pages:
+**Git commands
+• [Git commands](https://github.com/ricardoi/cheatsheets/blob/master/git.md)
+**Other programs examples**
+• [R examples](https://github.com/ricardoi/cheatsheets/blob/master/R%20commands.md)
+• [Julia examples](https://github.com/ricardoi/cheatsheets/blob/master/running_julia.md)
+• [SLURM script](https://github.com/ricardoi/cheatsheets/blob/master/JOB.sbatch)
+**Bash manipulation**
+• [Bash commands to manipulate fasta files](https://github.com/ricardoi/cheatsheets/blob/master/shell_tricks.md)
+• [Bash commands and files manipulation](https://github.com/ricardoi/cheatsheets/blob/master/bash_local-tricks.md)
+• [other bash tricks](https://github.com/ricardoi/cheatsheets/blob/master/shell_tricks.md)
+• [Regulas Expressions](https://github.com/ricardoi/cheatsheets/blob/master/ReGex101.md)
+
+
 
 ##### bash
 If you need an introduction to ```bash``` command lines go to this [document](https://github.com/ricardoi/cheatsheets/blob/master/commandsUNIX.pdf)
