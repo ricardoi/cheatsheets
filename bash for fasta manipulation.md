@@ -112,6 +112,16 @@ name<span class="token operator">=</span><span class="token variable"><span clas
 <h1 id="xml-files-manipulation-with-grep">XML files manipulation with grep</h1>
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token function">grep</span> -o <span class="token string">"&lt;Textseq-id_accession&gt;.*&lt;/Textseq-id_accession&gt;"</span> file.xml <span class="token operator">|</span> <span class="token function">cut</span> -d <span class="token string">"&gt;"</span> -f 2 <span class="token operator">|</span> <span class="token function">cut</span> -d <span class="token string">"&lt;"</span> -f 1
 </code></pre>
+
+## Get sequence lenghts in multifasta
+```bash
+awk '/^>/{if (l!="") print l; print; l=0; next}{l+=length($0)}END{print l}' file.fasta
+```
+## Get sequence stats in multifasta
+```bash
+awk 'BEGIN{flag=0;print "Contig ID\tContig Length\tA\tT\tG\tC\tN\tOtherCharacters"}{if($0~/^>/){if(flag==1){tot=aCount+tCount+gCount+cCount+nCount+xCount;print id"\t"tot"\t"aCount"\t"tCount"\t"gCount"\t"cCount"\t"nCount"\t"xCount;}id=$0;flag=1;aCount=gCount=cCount=tCount=nCount=xCount=0;}else{aCount+=gsub(/[aA]/,"A",$0);tCount+=gsub(/[tT]/,"T",$0);gCount+=gsub(/[gG]/,"G",$0);cCount+=gsub(/[cC]/,"C",$0);nCount+=gsub(/[nN]/,"N",$0);xCount+=gsub(/[^ATGCNatgcn]/,"X",$0);}}END{tot=aCount+tCount+gCount+cCount+nCount+xCount;print id"\t"tot"\t"aCount"\t"tCount"\t"gCount"\t"cCount"\t"nCount"\t"xCount;}' file.fasta
+```
+
 <h2 id="useful-for-bash-and-fasta-sequences">Useful for bash and fasta sequences</h2>
 <p><a href="https://github.com/crazyhottommy/bioinformatics-one-liners/blob/master/README.md">https://github.com/crazyhottommy/bioinformatics-one-liners/blob/master/README.md</a></p>
 <p><a href="http://blog.shenwei.me/manipulation-on-fasta-sequence/">http://blog.shenwei.me/manipulation-on-fasta-sequence/</a></p>
