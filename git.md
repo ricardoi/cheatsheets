@@ -64,3 +64,8 @@ git pull
 </li>
 </ul>
 
+```bash
+$ git rm --cached FILE_TO_REMOVE
+$ git commit --amend -CHEAD # or -m 'comment'?
+$ git push
+```
