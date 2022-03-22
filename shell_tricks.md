@@ -1,3 +1,10 @@
+# Single liners
+
+Mean sequence lenght  
+```bash
+awk '{/>/&&++a||b+=length()}END{print b/a}' file.fasta
+```
+
 
 ## bash commands to manipulate fasta files
 
