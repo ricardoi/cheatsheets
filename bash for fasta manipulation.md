@@ -34,6 +34,12 @@
 <h3 id="replace-spaces-with-underscores">replace spaces with underscores</h3>
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token keyword">for</span> f <span class="token keyword">in</span> *\ *<span class="token punctuation">;</span> <span class="token keyword">do</span> <span class="token function">mv</span> <span class="token string">"<span class="token variable">$f</span>"</span> <span class="token string">"<span class="token variable">${f// /_}</span>"</span><span class="token punctuation">;</span> <span class="token keyword">done</span>
 </code></pre>
+
+### sed option
+```bash
+sed 's, ,_,g' -i FASTA_file
+```
+
 <h3 id="add-extensions">add extensions</h3>
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token keyword">for</span> f <span class="token keyword">in</span> <span class="token punctuation">[</span>0-9<span class="token punctuation">]</span>file<span class="token punctuation">;</span> <span class="token keyword">do</span> <span class="token function">mv</span> <span class="token string">"<span class="token variable">$f</span>"</span> <span class="token string">"<span class="token variable">$f</span>.csv"</span><span class="token punctuation">;</span> <span class="token keyword">done</span>
 </code></pre>
