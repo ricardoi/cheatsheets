@@ -1,10 +1,10 @@
 # Adding a hard drive to Ubuntu22/Linux 
 
 ## First
-Connect your _new_ hard drive to the mother board using the data a SATA III Data signal cable (small one) and the power connector (large one). 
+Connect your _new_ hard drive to the mother board using the data a SATA III Data signal cable (small one) and the power cable (large one). 
 <img src="https://github.com/ricardoi/cheatsheets/blob/master/figures/SATAcabling.jpg"  width="600" height="400">
 ## Second
-Find out the name of your new hdd 
+Find out the name of your new hard drive 
 ```bash
 $ ls /dev/sd*
 ``` 
@@ -13,9 +13,9 @@ It will display all your hard drives in your computer as sata drive (sd) `a` and
 ```bash
 /dev/sda  /dev/sda1  /dev/sdb
 ```
-> Here we haven't creted the systems files, so there aren't in display.
+> Here we haven't created the systems files, so there aren't in display.
 
-`/dev/sdb` is the new hdd, but first **unmount** it to reformat it to a Ubunut/Linux compatible format: ext4, FAT32, or NTFS file system.
+`/dev/sdb` is the new hdd, but first **unmount** it to reformat it to Ubunut/Linux compatible formats: ext4, FAT32, or NTFS file system.
 ```bash
 $ sudo umount /dev/sdb
 ```
@@ -64,8 +64,15 @@ Number  Start   End     Size    File system  Name   Flags
  2      2600GB  10.0TB  7401GB  ext4         DBs
 ```
 
-After creating the partitions, we need to create a file systems on each partitio to be readed by the OS
+Check the added volumes
+```bash
+ls /dev/sd*
+/dev/sda  /dev/sda1  /dev/sdb  /dev/sdb1  /dev/sdb2
+```
+> Here we created the systems files, so they are in display!!
 
+
+After creating the partitions, we need to create a file systems on each partitio to be readed by the OS
 ```bash
 $sudo mkfs.xfs /dev/sdb1
 meta-data=/dev/sdb1              isize=512    agcount=4, agsize=152600512 blks
