@@ -64,14 +64,6 @@ Number  Start   End     Size    File system  Name   Flags
  2      2600GB  10.0TB  7401GB  ext4         DBs
 ```
 
-Check the added volumes
-```bash
-ls /dev/sd*
-/dev/sda  /dev/sda1  /dev/sdb  /dev/sdb1  /dev/sdb2
-```
-> Here we created the systems files, so they are in display!!
-
-
 After creating the partitions, we need to create a file systems on each partitio to be readed by the OS
 ```bash
 $sudo mkfs.xfs /dev/sdb1
@@ -97,9 +89,17 @@ log      =internal log           bsize=4096   blocks=521728, version=2
          =                       sectsz=4096  sunit=1 blks, lazy-count=1
 realtime =none                   extsz=4096   blocks=0, rtextents=0
 ```
-Now each partition is visible to Ubuntu.
-However, the hdd are root owned, so you need to change the group and premission to write and read.
+Now each partition is visible to Ubuntu, check the added volumes
+```bash
+ls /dev/sd*
+/dev/sda  /dev/sda1  /dev/sdb  /dev/sdb1  /dev/sdb2
+```
+> Here we created the systems files, so they are in display!!
+
+However, the volumes are root owned, so you need to change the group and permissions to write and read.
 ```bash
 $sudo chgrp adm /media/new_hdd2
 $sudo chdmod g+w /media/new_hdd2
 ```
+
+Enjoy your extra hard drive space!!
