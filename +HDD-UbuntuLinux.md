@@ -2,7 +2,7 @@
 
 ## First
 Connect your _new_ hard drive to the mother board using the data a SATA III Data signal cable (small one) and the power connector (large one). 
-
+<img src="https://github.com/ricardoi/cheatsheets/blob/master/figures/SATAcabling.jpg"  width="600" height="400">
 ## Second
 Find out the name of your new hdd 
 ```bash
