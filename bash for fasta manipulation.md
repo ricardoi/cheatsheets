@@ -77,6 +77,14 @@ sed 's, ,_,g' -i FASTA_file
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token keyword">for</span> f <span class="token keyword">in</span> *<span class="token punctuation">;</span> <span class="token keyword">do</span> 
     <span class="token function">mv</span> -- <span class="token string">"<span class="token variable">$f</span>"</span> <span class="token string">"<span class="token variable">$f</span>.fa"</span>
 <span class="token keyword">done</span>
+
+# replace fasta header names - shorter current header
+from `>tig00000007 len=23610 reads=194 class=contig suggestRepeat=no suggestBubble=yes suggestCircular=no trim=0-23610`
+to `>tig00000007`
+```bash
+sed -i '/^>/ s/ .*//' file.fasta
+```
+
 </code></pre>
 <h4 id="shell-paramater-expansion--file.txt">Shell paramater expansion  <code>${file%.txt}</code></h4>
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token keyword">for</span> f <span class="token keyword">in</span> *.txt<span class="token punctuation">;</span> <span class="token keyword">do</span> 
