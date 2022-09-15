@@ -26,6 +26,19 @@
 </code></pre>
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token function">grep</span> <span class="token string">'^&gt;'</span>  contigs.fasta <span class="token operator">|</span> <span class="token function">awk</span> -F _  <span class="token string">'BEGIN {OFS="\t"} {print <span class="token variable">$0</span>,<span class="token variable">$4</span>,<span class="token variable">$6</span>}'</span> <span class="token operator">|</span> <span class="token function">more</span>
 </code></pre>
+
+### sequences csv to fasta [one liner]
+#### from phytoseq object to csv
+```R 4.2
+to.fasta <- refseq(phyloseq) |>
+            as.data.frame()
+write.csv(to.fasta, "ASV.csv")
+```
+in `bash`
+```bash
+ sed "s/ASV/>ASV/g" ASV.csv | sed "s/,/\n/g" | sed 's/"//g' > ASV.fasta
+```
+
 <h3 id="split-multifasta-to-fasta-1">split multifasta to fasta</h3>
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token function">awk</span> -F <span class="token string">'&gt;'</span> <span class="token string">'/^&gt;/ {F=sprintf("%s.fasta", <span class="token variable">$2</span>); print &gt; F;next;} {print F; close(F)}'</span> <span class="token operator">&lt;</span> FASTAFILE.fa
 </code></pre>
