@@ -40,6 +40,10 @@ awk '/^>/{sub(/^>/,"");val=$0;next}  {print val,length($0)}' file.fas > lenghts.
 ```
 
 ```bash
+seqkit fx2tab --length --name --header-line  foo.fasta
+```
+
+```bash
 grep '^>'  contigs.fasta | awk -F _  'BEGIN {OFS="\t"} {print $0,$4,$6}' | more
 ```
 
