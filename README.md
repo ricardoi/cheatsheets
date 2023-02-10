@@ -57,7 +57,10 @@ This is a nice command to look at your directory structure
 $ tree -La 5 -F
 ```
 
-
+This is a nice shortcut to search for a specific "pattern" in a folder
+```bash
+grep -Rin 'core' | less
+```
 
 ###### tricks in bash for fasta manipulation
 Fasta files some times are tricky to manipulate, and there are many softwares for fasta manipulations. I prefer using bash commamnds to find fast results, check this [repo](https://github.com/ricardoi/cheatsheets/blob/master/bash%20for%20fasta%20manipulation.md) with  commands to manipulate fasta files.
