@@ -5,7 +5,11 @@ Mean sequence lenght
 awk '{/>/&&++a||b+=length()}END{print b/a}' file.fasta
 ```
 
-
+## Replace fasta header with spaces with same name after first space
+```bash
+sed 's/^>/>/g' test.fasta |  awk '{split($0,a," "); if(a[1]) print ">"a[1]; else print; }' | sed 's/^>//g' >  res.fasta
+```
+> couldn't make work with a single `>` because it was adding 
 ## bash commands to manipulate fasta files
 
 ### `find` files by size
