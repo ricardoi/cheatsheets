@@ -60,7 +60,7 @@ awk  '/^>/{s=++d".fasta"} {print > s}'  <inputFile>
 ```
 ### replace spaces with underscores
 ```bash
-for f in *\ *; do mv "$f" "${f// /_}"; done
+sed 's, ,_,g' -i FASTA_file
 ```
 
 ### add extensions
