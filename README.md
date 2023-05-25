@@ -20,6 +20,9 @@ Personal notes, and code collected through the years finding solutions.
 • [other bash tricks](https://github.com/ricardoi/cheatsheets/blob/master/shell_tricks.md)\
 • [Regular Expressions](https://github.com/ricardoi/cheatsheets/blob/master/ReGex101.md)\
 
+#### Notes
+If you install `R` and `Rstudio` with brew, it won't install `igraph` and `install.packages("RcppArmadillo")` due to a `clang` & `c++11` problem. However, you can install `XQuartz` and `fortran` from the `R` website. Make sure `xcode-select --install` is installed.
+
 ##### bash
 If you need an introduction to ```bash``` command lines go to this [document](https://github.com/ricardoi/cheatsheets/blob/master/commandsUNIX.pdf)
 
