@@ -35,6 +35,8 @@ If you need an introduction to ```bash``` command lines go to this [document](ht
 > `mv` - move a file or rename a file \
 > If you want more, check the [document](https://github.com/ricardoi/cheatsheets/blob/master/commandsUNIX.pdf)
 
+find empty folders `find . -depth -type d -empty`
+
 ###### loops in `bash`
 
 There are several ways to do for loops in bash, so far this is my favorite syntax:
