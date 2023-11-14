@@ -5,6 +5,11 @@ Mean sequence lenght
 awk '{/>/&&++a||b+=length()}END{print b/a}' file.fasta
 ```
 
+## Replace fasta header with 
+```
+awk '/^>/{split(FILENAME, b, "_"); split($1, a, "_"); print a[1]"_"a[2]"_"b[1]; next} 1' viral_seqs.fasta
+```
+
 ## Replace fasta header with spaces with same name after first space
 ```bash
 sed 's/^>/>/g' test.fasta |  awk '{split($0,a," "); if(a[1]) print ">"a[1]; else print; }' | sed 's/^>//g' >  res.fasta
